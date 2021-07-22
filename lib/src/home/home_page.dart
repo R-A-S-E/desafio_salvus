@@ -138,8 +138,9 @@ class HomePage extends StatelessWidget {
                                     width: MediaQuery.of(context).size.width *
                                         0.24,
                                     text: "Criar Conta",
-                                    onPressed: () => Navigator.pushNamed(
-                                        context, "/Register"),
+                                    onPressed: () async =>
+                                        await Navigator.pushNamed(
+                                            context, "/Register"),
                                   ),
                                 ],
                               ),

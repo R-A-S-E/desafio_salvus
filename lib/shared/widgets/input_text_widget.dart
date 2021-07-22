@@ -5,7 +5,7 @@ class InputTextWidget extends StatelessWidget {
   final TextInputType textInputType;
   final String label;
   final String? Function(String? value) validator;
-  final ValueChanged<String> onChanged;
+  final ValueChanged<String>? onChanged;
   final bool obscureText;
   const InputTextWidget(
       {Key? key,
@@ -13,7 +13,7 @@ class InputTextWidget extends StatelessWidget {
       this.controller,
       required this.label,
       required this.validator,
-      required this.onChanged,
+      this.onChanged,
       this.obscureText = false})
       : super(key: key);
 

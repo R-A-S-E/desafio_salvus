@@ -8,7 +8,7 @@ void main() {
     home: HomePage(),
     debugShowCheckedModeBanner: false,
     theme: ThemeData(primaryColor: Colors.white),
-    initialRoute: "/Register",
+    initialRoute: "/Home",
     routes: {
       "/Home": (context) => HomePage(),
       "/Register": (context) => RegisterPage(),
